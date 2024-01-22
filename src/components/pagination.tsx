@@ -1,4 +1,9 @@
-import { ChevronsLeft } from 'lucide-react'
+import {
+  ChevronLeft,
+  ChevronRight,
+  ChevronsLeft,
+  ChevronsRight,
+} from 'lucide-react'
 
 import { Button } from './ui/button'
 
@@ -33,17 +38,17 @@ export function Pagination({
           </Button>
 
           <Button className="h-8 w-8 p-0" variant="outline">
-            <ChevronsLeft />
-            <span className="sr-only">Próxima página</span>
-          </Button>
-
-          <Button className="h-8 w-8 p-0" variant="outline">
-            <ChevronsLeft />
+            <ChevronLeft />
             <span className="sr-only">Página anterior</span>
           </Button>
 
           <Button className="h-8 w-8 p-0" variant="outline">
-            <ChevronsLeft />
+            <ChevronRight />
+            <span className="sr-only">Próxima página</span>
+          </Button>
+
+          <Button className="h-8 w-8 p-0" variant="outline">
+            <ChevronsRight />
             <span className="sr-only">Última página</span>
           </Button>
         </div>
